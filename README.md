@@ -102,7 +102,7 @@ Plotting the full 10-year series shows a clear **yearly seasonal pattern** — t
 ```python
 plt.figure(figsize=(12, 4))
 plt.plot(df.index, df['Temp'], color='navy', alpha=0.7, label='Daily Min Temp')
-plt.title('![Daily Minimum Temperatures](raw-data-plot.png)')
+plt.title('raw-data-plot.png')
 plt.xlabel('Date')
 plt.ylabel('Temperature (°C)')
 plt.legend()
@@ -253,7 +253,7 @@ plt.figure(figsize=(12, 5))
 plt.plot(train.index, train[TARGET], label='Train Actual', color='gray', alpha=0.5)
 plt.plot(test.index, test[TARGET], label='Test Actual', color='blue')
 plt.plot(test.index, test['Prediction'], label='XGBoost Prediction', color='orange', linestyle='--')
-plt.title('![Actual vs Predicted Forecast](forecast-results.png)')
+plt.title('forecast-results.png')
 plt.xlabel('Date')
 plt.ylabel('Temperature (°C)')
 plt.legend()
@@ -290,7 +290,7 @@ sns.barplot(
     palette='viridis', 
     legend=False
 )
-plt.title('![Feature Importance](feature-importance.png)')
+plt.title('feature-importance.png')
 plt.tight_layout()
 plt.show()
 ```
